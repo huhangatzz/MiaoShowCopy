@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DEr-t5-4Kd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Home Care View Controller-->
+        <scene sceneID="EWG-1g-igi">
+            <objects>
+                <viewController id="DEr-t5-4Kd" customClass="MB_HomeCareViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KN6-4e-D76"/>
+                        <viewControllerLayoutGuide type="bottom" id="4uS-u6-VSo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dWW-7I-Kb9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_follow_250x247" translatesAutoresizingMaskIntoConstraints="NO" id="kOa-5Q-Jq1">
+                                <rect key="frame" x="140" y="82" width="320" height="316"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="316" id="fKR-lh-lCh"/>
+                                    <constraint firstAttribute="width" constant="320" id="rGq-KC-2Cm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你关注的主播还未直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yM-Qt-nfT">
+                                <rect key="frame" x="215" y="426" width="170" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="c5F-T9-8gF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sa8-Vt-QCv">
+                                <rect key="frame" x="40" y="486" width="520" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mie-nG-Qty"/>
+                                </constraints>
+                                <state key="normal" title="去看看当前那热门直播"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="DEr-t5-4Kd" eventType="touchUpInside" id="zM8-5Q-fjB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kOa-5Q-Jq1" firstAttribute="centerY" secondItem="dWW-7I-Kb9" secondAttribute="centerY" constant="-60" id="3Tm-H4-6io"/>
+                            <constraint firstItem="sa8-Vt-QCv" firstAttribute="leading" secondItem="dWW-7I-Kb9" secondAttribute="leading" constant="40" id="4g5-Rm-gcC"/>
+                            <constraint firstItem="kOa-5Q-Jq1" firstAttribute="centerX" secondItem="dWW-7I-Kb9" secondAttribute="centerX" id="5s7-ka-ZQY"/>
+                            <constraint firstItem="2yM-Qt-nfT" firstAttribute="centerX" secondItem="dWW-7I-Kb9" secondAttribute="centerX" id="HNK-dd-i6o"/>
+                            <constraint firstAttribute="trailing" secondItem="sa8-Vt-QCv" secondAttribute="trailing" constant="40" id="dxU-kp-ajy"/>
+                            <constraint firstItem="sa8-Vt-QCv" firstAttribute="top" secondItem="2yM-Qt-nfT" secondAttribute="bottom" constant="30" id="lfe-lq-omb"/>
+                            <constraint firstItem="2yM-Qt-nfT" firstAttribute="top" secondItem="kOa-5Q-Jq1" secondAttribute="bottom" constant="28" id="zR7-HG-TfD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="toSeeBtn" destination="sa8-Vt-QCv" id="MJ4-LA-NHh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yFm-mD-as7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="206"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="no_follow_250x247" width="320" height="316"/>
+    </resources>
+</document>

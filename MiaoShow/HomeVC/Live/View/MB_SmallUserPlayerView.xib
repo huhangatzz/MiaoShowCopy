@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MB_SmallUserPlayerView">
+            <rect key="frame" x="0.0" y="0.0" width="98" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUy-pn-TG7" userLabel="PlayerView">
+                    <rect key="frame" x="0.0" y="0.0" width="98" height="98"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_head" translatesAutoresizingMaskIntoConstraints="NO" id="I68-Z8-mri">
+                            <rect key="frame" x="0.0" y="0.0" width="98" height="98"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="I68-Z8-mri" firstAttribute="leading" secondItem="UUy-pn-TG7" secondAttribute="leading" id="202-lc-9pa"/>
+                        <constraint firstAttribute="trailing" secondItem="I68-Z8-mri" secondAttribute="trailing" id="Qah-uK-ZqA"/>
+                        <constraint firstAttribute="bottom" secondItem="I68-Z8-mri" secondAttribute="bottom" id="f2m-EW-PM8"/>
+                        <constraint firstItem="I68-Z8-mri" firstAttribute="top" secondItem="UUy-pn-TG7" secondAttribute="top" id="nPr-si-evp"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="public_catEar_98x25" translatesAutoresizingMaskIntoConstraints="NO" id="SGL-OW-Vko">
+                    <rect key="frame" x="0.0" y="0.0" width="98" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="i1x-JL-Yho"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UUy-pn-TG7" secondAttribute="bottom" id="McM-gC-b69"/>
+                <constraint firstItem="UUy-pn-TG7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TA5-gJ-uqa"/>
+                <constraint firstAttribute="trailing" secondItem="SGL-OW-Vko" secondAttribute="trailing" id="gEf-3P-K0K"/>
+                <constraint firstItem="SGL-OW-Vko" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mJk-ew-ikV"/>
+                <constraint firstItem="UUy-pn-TG7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sHw-Ri-iMe"/>
+                <constraint firstItem="SGL-OW-Vko" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vgw-in-vkM"/>
+                <constraint firstAttribute="trailing" secondItem="UUy-pn-TG7" secondAttribute="trailing" id="yPG-f1-hp8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="playerView" destination="UUy-pn-TG7" id="dWu-3Q-1Rf"/>
+            </connections>
+            <point key="canvasLocation" x="207" y="255"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder_head" width="100" height="100"/>
+        <image name="public_catEar_98x25" width="98" height="25"/>
+    </resources>
+</document>

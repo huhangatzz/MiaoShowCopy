@@ -1,0 +1,30 @@
+//
+//  MiaoShow.pch
+//  MiaoShow
+//
+//  Created by huhang on 16/9/3.
+//  Copyright © 2016年 huhang. All rights reserved.
+//
+
+#ifndef MiaoShow_pch
+#define MiaoShow_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <IJKMediaFramework/IJKMediaFramework.h>
+#import <Masonry.h>
+#import <MJExtension.h>
+
+#import "MB_BaseViewController.h"
+#import "MB_ParentTableController.h"
+#import "HttpTool.h"
+#import "contents.h"
+#import "UrlString.h"
+
+#import "UIColor+Extension.h"
+#import "UIView+BSExtension.h"
+#import "UIViewController+Extension.h"
+#import "UIViewController+ProgressHUD.h"
+
+
+#endif 
